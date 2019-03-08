@@ -16,15 +16,15 @@ class MarioKartViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    
+    @IBAction func didPanKartView(_ sender: UIPanGestureRecognizer) {
+        // In order to drag the kart around we need the location
+        let location = sender.location(in: view)
+        
+        print("Location: x: \(location.x), y: \(location.y)")
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

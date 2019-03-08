@@ -12,6 +12,7 @@
 		56591A942233235A009C73BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56591A922233235A009C73BD /* Main.storyboard */; };
 		56591A962233235F009C73BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56591A952233235F009C73BD /* Assets.xcassets */; };
 		56591A992233235F009C73BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56591A972233235F009C73BD /* LaunchScreen.storyboard */; };
+		56591AA122332662009C73BD /* MarioKartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56591AA022332662009C73BD /* MarioKartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		56591A952233235F009C73BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56591A982233235F009C73BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56591A9A2233235F009C73BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56591AA022332662009C73BD /* MarioKartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarioKartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				56591A8E2233235A009C73BD /* AppDelegate.swift */,
 				56591A902233235A009C73BD /* ViewController.swift */,
 				56591A922233235A009C73BD /* Main.storyboard */,
+				56591AA022332662009C73BD /* MarioKartViewController.swift */,
 				56591A952233235F009C73BD /* Assets.xcassets */,
 				56591A972233235F009C73BD /* LaunchScreen.storyboard */,
 				56591A9A2233235F009C73BD /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56591A912233235A009C73BD /* ViewController.swift in Sources */,
+				56591AA122332662009C73BD /* MarioKartViewController.swift in Sources */,
 				56591A8F2233235A009C73BD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
