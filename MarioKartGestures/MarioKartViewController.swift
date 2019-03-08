@@ -21,10 +21,15 @@ class MarioKartViewController: UIViewController {
     @IBAction func didPanKartView(_ sender: UIPanGestureRecognizer) {
         // In order to drag the kart around we need the location
         let location = sender.location(in: view)
-        
-        print("Location: x: \(location.x), y: \(location.y)")
+//        print("Location: x: \(location.x), y: \(location.y)")
 
+        // We will use the location to move the kart
+        let kartView = sender.view!
+        kartView.center = location
     }
     
-
+    
+    @IBAction func didPinchKart(_ sender: UIPinchGestureRecognizer) {
+    }
+    
 }
