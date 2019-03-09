@@ -20,6 +20,10 @@
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="8sM-ty-OD0">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="2OQ-5G-uDc" appends="YES" id="URN-cx-UeP"/>
+                                </connections>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="kart_0" translatesAutoresizingMaskIntoConstraints="NO" id="Rzc-Ea-SIy">
                                 <rect key="frame" x="16" y="138" width="80" height="80"/>
@@ -79,7 +83,6 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="8sM-ty-OD0" secondAttribute="bottom" id="3UN-yF-jGd"/>
                             <constraint firstItem="8sM-ty-OD0" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5bd-ym-cWY"/>
                             <constraint firstItem="8sM-ty-OD0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Shw-oW-uiJ"/>
                             <constraint firstItem="8sM-ty-OD0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gpO-aB-fcJ"/>
@@ -87,6 +90,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="kartView0" destination="Rzc-Ea-SIy" id="7Wx-JN-ibC"/>
+                        <outlet property="kartView1" destination="cLe-Fk-JgZ" id="Bgm-hV-Ip6"/>
+                        <outlet property="kartView2" destination="rJN-2P-qJf" id="RsB-Kc-2RW"/>
+                        <outlet property="kartView3" destination="SN1-Xh-4cK" id="5ro-eq-go4"/>
+                        <outlet property="kartView4" destination="a3a-Ri-fRb" id="Fqc-JY-Vk2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="iAu-Yb-lHS">
@@ -169,10 +179,31 @@
                         <action selector="didTapKartVIew:" destination="BYZ-38-t0r" id="AY7-yj-bsK"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer numberOfTapsRequired="2" id="SkI-Xg-mpU"/>
-                <tapGestureRecognizer numberOfTapsRequired="2" id="ifu-7s-e6I"/>
-                <tapGestureRecognizer numberOfTapsRequired="2" id="A2d-vZ-LFC"/>
-                <tapGestureRecognizer numberOfTapsRequired="2" id="gS8-tK-ALv"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="SkI-Xg-mpU">
+                    <connections>
+                        <action selector="didTapKartVIew:" destination="BYZ-38-t0r" id="7rq-mh-cj1"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="ifu-7s-e6I">
+                    <connections>
+                        <action selector="didTapKartVIew:" destination="BYZ-38-t0r" id="scA-Xd-Zdx"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="A2d-vZ-LFC">
+                    <connections>
+                        <action selector="didTapKartVIew:" destination="BYZ-38-t0r" id="zaf-zu-VRd"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="gS8-tK-ALv">
+                    <connections>
+                        <action selector="didTapKartVIew:" destination="BYZ-38-t0r" id="Sq0-MX-FRq"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="2OQ-5G-uDc">
+                    <connections>
+                        <action selector="didLongPressBackground:" destination="BYZ-38-t0r" id="WUO-Q0-0vs"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.23188405797103" y="133.25892857142856"/>
         </scene>
